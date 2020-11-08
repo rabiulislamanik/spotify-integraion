@@ -3,12 +3,10 @@ import {extractAuthResponse} from '../../utils/authUtils';
 import { UserAuth } from "../../custom-types/user";
 import {AuthContext} from '../../contexts/AuthContext';
 import {useHistory } from 'react-router-dom';
-const defaultUser:UserAuth={access_token:""};
 
 //get auth datas from spotify by extracting url hash and then cleanup the hash
 const authResponse = extractAuthResponse(window.location.hash);
 const access_token = authResponse.access_token;
-const expires_in = authResponse.expires_in;
 window.location.hash="";
 
 

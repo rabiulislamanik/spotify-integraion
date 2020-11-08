@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
+import logo from '../../logo.png';
 
 const {
   REACT_APP_SPOTIFY_CLIENT_ID,
@@ -16,6 +18,8 @@ const scopes = [
 function Login() {
   return (
     <header className="App-header">
+        <h1>Spotify Integration</h1>
+        <img src={logo} alt="Logo" />
         <p>
         Please Login to explore the website.
         </p>

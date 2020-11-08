@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'B612', 'Fira Sans', 'Droid Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +9,78 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color:#1DB954;
+}
+
+
+h1 {
+	color: #1DB954;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  margin-left: 15px;
+	font-size: 1.45em;
+}
+
+.logo,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #1DB954;
+}
+
+.main-nav a:hover {
+	color: 	#f59b23;
+}
+
+.navbar {
+	padding-top: .5em;
+	padding-bottom: .5em;
+  background-color:  #000000;
+}
+
+
+@media (min-height: 450px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+	.navbar,
+	.main-nav {
+		display: flex;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 100vw;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.navbar {
+		flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	}
 }

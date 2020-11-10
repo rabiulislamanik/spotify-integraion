@@ -17,7 +17,6 @@ function AuthHandler() {
         if (access_token) {
             localStorage.setItem("UserAuth",JSON.stringify({access_token:access_token}));
             authContext.setUser({access_token:access_token});
-            console.log('authre:',access_token)
             history.push("/newreleases");
         }
       }, []);

@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
-import {AuthContext} from '../../contexts/AuthContext';
+import React from 'react';
 
-function SongCategories() {
-  const authContext = useContext(AuthContext);
-  console.log('user context:',authContext.user);
+function NotFound() {
+
   return (
     <div className="App-header">
         <p>Page Not Found.</p>
@@ -12,4 +10,4 @@ function SongCategories() {
   );
 }
 
-export default SongCategories;
+export default NotFound;

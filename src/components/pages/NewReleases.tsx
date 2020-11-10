@@ -9,7 +9,6 @@ import AlbumCard from '../miscellaneous/AlbumCard';
 
 function NewReleases() {
   const authContext = useContext(AuthContext);
-  console.log('user context:',authContext.user);
   const initialAlbum:IAlbumItem[] = [];
   const [albums, setAlbums]: [IAlbumItem[], (albums: IAlbumItem[]) => void] = useState(initialAlbum);
   const [loading, setLoading]: [boolean, (loading: boolean) => void] = useState<boolean>(true);
@@ -37,15 +36,12 @@ function NewReleases() {
       )
       .then(response => {
         if(response){
-          console.log(response);
-          console.log(response.data.albums);
           setAlbums([...albums,...response.data.albums.items]);
           setLoading(false);
           setNextUrl(response.data.albums.next);
         } 
       })
       .catch(error => {
-        console.log('error',error);
         const errorMessage =
         error.response.status === 401
           ? "Not Authorized"

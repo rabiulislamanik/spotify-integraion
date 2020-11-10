@@ -10,7 +10,7 @@ import {AuthContext} from '../../contexts/AuthContext';
 function ProtectedRoute(props:RouteProps){
     const authContext = useContext(AuthContext);
     const isLoggedIn = authContext.user?.access_token !== undefined;
-    console.log('isLoggedIn:',isLoggedIn);
+
     return (
         <Route render={(compProps: RouteComponentProps) => {
             if(!isLoggedIn) {

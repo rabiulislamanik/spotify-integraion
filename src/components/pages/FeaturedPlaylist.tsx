@@ -8,7 +8,7 @@ import axios from 'axios';
 
 function FeaturedPlayList() {
   const authContext = useContext(AuthContext);
-  console.log('user context:',authContext.user);
+
   const initialPlaylists:IPlaylistItem[] = [];
   const [playlists, setPlaylists]: [IPlaylistItem[], (playlists: IPlaylistItem[]) => void] = useState(initialPlaylists);
   const [loading, setLoading]: [boolean, (loading: boolean) => void] = useState<boolean>(true);
@@ -36,8 +36,6 @@ function FeaturedPlayList() {
       )
       .then(response => {
         if(response){
-          console.log(response);
-          console.log(response.data.playlists);
           setPlaylists([...playlists,...response.data.playlists.items]);
           setPlaylistMessage(response.data.message);
           setLoading(false);
@@ -45,7 +43,6 @@ function FeaturedPlayList() {
         } 
       })
       .catch(error => {
-        console.log('error',error);
         const errorMessage =
         error.response.status === 401
           ? "Not Authorized"

@@ -8,7 +8,6 @@ import CategoryCard from '../miscellaneous/CategoryCard';
 
 function SongCategories() {
   const authContext = useContext(AuthContext);
-  console.log('user context:',authContext.user);
 
   const initialCategories:ICategoryItem[] = [];
   const [categories, setCategories]: [ICategoryItem[], (categories: ICategoryItem[]) => void] = useState(initialCategories);
@@ -36,15 +35,12 @@ function SongCategories() {
       )
       .then(response => {
         if(response){
-          console.log(response);
-          console.log(response.data.categories);
           setCategories([...categories,...response.data.categories.items]);
           setLoading(false);
           setNextUrl(response.data.categories.next);
         } 
       })
       .catch(error => {
-        console.log('error',error);
         const errorMessage =
         error.response.status === 401
           ? "Not Authorized"

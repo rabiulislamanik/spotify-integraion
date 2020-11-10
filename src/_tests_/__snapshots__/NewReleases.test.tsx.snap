@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewRealeases Component renders correctly 1`] = `
+<div
+  data-testid="new-releases"
+>
+  <div
+    className="main-container"
+  >
+    <div
+      className="cards-flex-container"
+    />
+  </div>
+  <h1>
+    Loading...
+  </h1>
+</div>
+`;

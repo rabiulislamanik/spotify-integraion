@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when an album is passed as prop 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="icon"
+    className="card-image"
+    height="128"
+    src="image_url2"
+    width="128"
+  />
+  <p>
+    Album : 
+    <a
+      className="card-link"
+      href="spotify_url"
+    >
+      Album
+    </a>
+  </p>
+  <p>
+    Album Type : 
+    single
+  </p>
+  <p>
+    Total Tracks : 
+    1
+  </p>
+  <p>
+    Artists : 
+    <a
+      className="card-link"
+      href="artist_fake_url"
+    >
+      Fake Artist 
+    </a>
+  </p>
+  <p>
+    Released On : 
+    2020-11-11
+  </p>
+</div>
+`;

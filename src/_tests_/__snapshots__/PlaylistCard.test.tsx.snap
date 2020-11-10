@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when an Playlist is passed as prop 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="icon"
+    className="card-image"
+    height="128"
+    src="url_to_image"
+    width="128"
+  />
+  <p>
+    <a
+      className="card-link"
+      href="Url_to_spotify"
+    >
+      Dummy Playlist
+    </a>
+  </p>
+  <p>
+    Title
+  </p>
+  <p>
+    Playlist by : 
+    <a
+      className="card-link"
+      href="Another url to spotify"
+    >
+      Dummy Owner
+    </a>
+  </p>
+</div>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when an Category is passed as prop 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="icon"
+    className="card-image"
+    height="256"
+    src="icon_url"
+    width="256"
+  />
+  <p>
+    Dummy Category
+  </p>
+</div>
+`;

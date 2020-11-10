@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SongCategories Component renders correctly 1`] = `
+<div>
+  <div
+    className="main-container"
+  >
+    <div
+      className="cards-flex-container"
+    />
+  </div>
+  <h1>
+    Loading...
+  </h1>
+</div>
+`;

@@ -52,7 +52,7 @@ function NewReleases() {
   }
    
   return (
-    <div>
+    <div data-testid="new-releases">
       {!loading && albums.length!==0 && (<h1>New Released Albums</h1>)}
       <CardContainer>
       {albums.map((album,i) => (

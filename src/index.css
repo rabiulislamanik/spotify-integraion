@@ -51,9 +51,62 @@ a {
 .navbar {
 	padding-top: .5em;
 	padding-bottom: .5em;
-  background-color:  #000000;
+  	background-color:  #000000;
 }
 
+.load-more {
+	background: none!important;
+	border: none;
+	padding: 0!important;
+	color:  #1DB954;
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.main-container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+}
+
+.cards-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	padding: 5px;
+}
+
+.card {
+    width:90%;
+    margin: 0.5em auto;
+	height: auto;
+	background:black;
+	border-radius: 10px;
+	color:white;
+	transition: box-shadow .3s;
+	order: 1px solid #ccc;
+}
+
+.card:hover{
+	box-shadow: 5px 5px 15px #1DB954;
+}
+
+.card-image {
+    display: block;
+	margin: 0 auto;
+	margin-top:10px;
+    max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.card-link{
+	color: #1DB954;
+	text-decoration:underline;
+	margin: 0 3px;
+}
 
 @media (min-height: 450px) {
   .navbar {
@@ -74,13 +127,18 @@ a {
 		margin: 0 auto;
 		max-width: 100vw;
 	}
-
+	.card { 
+		width: 38%;
+	}
 }
 
 @media (min-width: 1025px) {
 	.navbar {
 		flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.card { 
+		width: 24%; 
 	}
 }

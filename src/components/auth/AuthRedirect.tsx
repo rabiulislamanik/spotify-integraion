@@ -1,6 +1,5 @@
 import React,{useEffect,useContext} from 'react';
 import {extractAuthResponse} from '../../utils/authUtils';
-import { UserAuth } from "../../custom-types/user";
 import {AuthContext} from '../../contexts/AuthContext';
 import {useHistory } from 'react-router-dom';
 

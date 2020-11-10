@@ -57,6 +57,7 @@ a {
 .load-more {
 	background: none!important;
 	border: none;
+	outline:none;
 	padding: 0!important;
 	color:  #1DB954;
 	text-decoration: underline;

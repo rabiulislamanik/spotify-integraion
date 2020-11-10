@@ -62,9 +62,9 @@ function FeaturedPlayList() {
       </CardContainer>
 
       {loading && playlists.length===0 &&(<h1>Loading...</h1>)}
-      {!loading && error && (<p className="App-header">{error}</p>)}
+      {!loading && error && (<p className="error-message">{error}</p>)}
       {nextUrl && (<button className="load-more" onClick={handleLoadMore}>Load More</button>)}
-      {loading && playlists.length>0 && (<p className="App-header">{error}</p>)}
+      {loading && playlists.length>0 && (<p className="error-message">{error}</p>)}
     </div>
   );
 }

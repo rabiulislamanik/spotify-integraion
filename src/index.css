@@ -65,6 +65,10 @@ a {
 	font-size: 1.2em;
 }
 
+.error-message {
+	color:red;
+}
+
 .main-container{
     width: 95%;
     margin: 0 auto;
